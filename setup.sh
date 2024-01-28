@@ -1,11 +1,10 @@
 #!/bin/bash
 
+# этот код помогает установить рабочую директорию скрипта в директорию, в которой он находится.
 DIRNAME=`dirname $0`
-#PWD = `pwd`
-
 cd $DIRNAME
 
-#sed -i "s/export LD_LIBRARY_PATH/#export LD_LIBRARY_PATH/g" ~/.bashrc
+
 source ~/.bashrc
 if [ ! -d "/opt/MVS" ]; then
 	echo "Install MVS,Please wait..."
@@ -23,16 +22,7 @@ if [ ! -d "/usr/local/Qt-5.6.3/lib/fonts" ]; then
 else
 	echo "path exist..."
 fi
-#
 
-#if  cat ~/.bashrc | grep -c "export LD_LIBRARY_PATH=/opt/MVS/bin" > /dev/null
-#then
-#	echo "Include path exist"
-#else
-#  	echo   "export LD_LIBRARY_PATH=/opt/MVS/bin" >> ~/.bashrc
-#fi
-
-#source ~/.bashrc
 
 echo "Set up the SDK environment..."
 
@@ -57,7 +47,7 @@ cd /opt/MVS/logserver
 ./RemoveServer.sh
 ./InstallServer.sh
 
-#����MVFG����������־����
+
 cd /opt/MVS/driver/pcie
 if [ -f /opt/MVS/driver/pcie/unload.sh ]; then
 	bash ./unload.sh

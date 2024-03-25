@@ -130,10 +130,10 @@ SET_MAKE =
 SHELL = /bin/bash
 STRIP = 
 VERSION = 1.0
-abs_builddir = /home/yjf/linuxSDK/demo/GTK_Demo
-abs_srcdir = /home/yjf/linuxSDK/demo/GTK_Demo
-abs_top_builddir = /home/yjf/linuxSDK/demo/GTK_Demo
-abs_top_srcdir = /home/yjf/linuxSDK/demo/GTK_Demo
+abs_builddir = home/cnc/Documents/machine_vision_software/huateng_vision/MVSDK/demo/Sampli_Save_Demo
+abs_srcdir = /home/cnc/Documents/machine_vision_software/huateng_vision/MVSDK/demo/Sampli_Save_Demo
+abs_top_builddir = /home/cnc/Documents/machine_vision_software/huateng_vision/MVSDK/demo/Sampli_Save_Demo
+abs_top_srcdir = /home/cnc/Documents/machine_vision_software/huateng_vision/MVSDK/demo/Sampli_Save_Demo
 ac_ct_CC = gcc
 ac_ct_CXX = g++
 am__include = include
@@ -284,8 +284,9 @@ distclean-compile:
 include ./$(DEPDIR)/Demo.Po
 include ./$(DEPDIR)/GTK_demo.Po
 include ./$(DEPDIR)/callbacks.Po
-include ./$(DEPDIR)/interface.Po
+
 include ./$(DEPDIR)/support.Po
+include ./$(DEPDIR)/interface.Po
 
 .cpp.o:
 	$(CXXCOMPILE) -MT $@ -MD -MP -MF $(DEPDIR)/$*.Tpo -c -o $@ $<

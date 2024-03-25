@@ -79,11 +79,11 @@ DIST_ARCHIVES = $(distdir).tar.gz
 GZIP_ENV = --best
 distuninstallcheck_listfiles = find . -type f -print
 distcleancheck_listfiles = find . -type f -print
-ACLOCAL = ${SHELL} /home/yjf/tmp/linuxSDK/demo/Sampli_Save_Demo/missing --run aclocal-1.11
-AMTAR = ${SHELL} /home/yjf/tmp/linuxSDK/demo/Sampli_Save_Demo/missing --run tar
-AUTOCONF = ${SHELL} /home/yjf/tmp/linuxSDK/demo/Sampli_Save_Demo/missing --run autoconf
-AUTOHEADER = ${SHELL} /home/yjf/tmp/linuxSDK/demo/Sampli_Save_Demo/missing --run autoheader
-AUTOMAKE = ${SHELL} /home/yjf/tmp/linuxSDK/demo/Sampli_Save_Demo/missing --run automake-1.11
+ACLOCAL = ${SHELL} /home/cnc/Documents/machine_vision_software/huateng_vision/MVSDK/demo/Sampli_Save_Demo --run aclocal-1.11
+AMTAR = ${SHELL} /home/cnc/Documents/machine_vision_software/huateng_vision/MVSDK/demo/Sampli_Save_Demo --run tar
+AUTOCONF = ${SHELL} /home/cnc/Documents/machine_vision_software/huateng_vision/MVSDK/demo/Sampli_Save_Demo --run autoconf
+AUTOHEADER = ${SHELL} /home/cnc/Documents/machine_vision_software/huateng_vision/MVSDK/demo/Sampli_Save_Demo --run autoheader
+AUTOMAKE = ${SHELL} /home/cnc/Documents/machine_vision_software/huateng_vision/MVSDK/demo/Sampli_Save_Demo --run automake-1.11
 AWK = mawk
 CC = gcc
 CCDEPMODE = depmode=gcc3
@@ -279,7 +279,7 @@ mostlyclean-compile:
 distclean-compile:
 	-rm -f *.tab.c
 
-include ./$(DEPDIR)/main.Po
+#include ./$(DEPDIR)/main.Po
 
 .cpp.o:
 	$(CXXCOMPILE) -MT $@ -MD -MP -MF $(DEPDIR)/$*.Tpo -c -o $@ $<

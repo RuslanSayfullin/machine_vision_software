@@ -1,0 +1,7 @@
+Log file created at: 2024/03/22 18:06:50
+Running on machine: asgard
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+W0322 18:06:50.642004 17917 CameraGigeBase.cpp:4180] Device:(name:HT-GE501GC-T1-C sn:054002220008 cam:192.168.1.210-100-1400 nic:enp7s0-192.168.1.224-100M-1500)Heart Fail:1
+W0322 18:06:52.967516 17917 CameraGigeBase.cpp:4180] Device:(name:HT-GE501GC-T1-C sn:054002220008 cam:192.168.1.210-100-1400 nic:enp7s0-192.168.1.224-100M-1500)Heart Fail:2
+W0322 18:06:55.292364 17917 CameraGigeBase.cpp:4180] Device:(name:HT-GE501GC-T1-C sn:054002220008 cam:192.168.1.210-100-1400 nic:enp7s0-192.168.1.224-100M-1500)Heart Fail:3
+W0322 18:06:57.617165 17917 CameraGigeBase.cpp:4180] Device:(name:HT-GE501GC-T1-C sn:054002220008 cam:192.168.1.210-100-1400 nic:enp7s0-192.168.1.224-100M-1500)Heart Fail:4

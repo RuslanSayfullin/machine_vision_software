@@ -13,7 +13,7 @@
 # для корректной работы систем требуется установка Python3 версий 11 или новее.
 - Обновите вашу систему:
 	$ sudo apt update && sudo apt upgrade
-- Сначала нам нужно установить необходимые зависимости, чтобы иметь возможность собирать Python 3.10 из исходного кода:
+- Сначала нам нужно установить необходимые зависимости, чтобы иметь возможность собирать Python из исходного кода:
 	$ sudo apt install build-essential zlib1g-dev libncurses5-dev libgdbm-dev libnss3-dev libssl-dev libreadline-dev libffi-dev libsqlite3-dev wget libbz2-dev
 - Скачать Python 3.12 для Debian:
 	$ wget https://www.python.org/ftp/python/3.12.2/Python-3.12.2.tgz
@@ -57,3 +57,5 @@
 	$ make
 - Запустить проект:
 	$ sudo ./main
+
+
